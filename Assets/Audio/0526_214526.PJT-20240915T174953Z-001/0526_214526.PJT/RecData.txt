@@ -1,5 +1,0 @@
-Sample Rate : 48000 Hz
-Rec Format : WAV 24-bit
-Input Select :
- File1 : Internal Mic
- File2 : Analog In
