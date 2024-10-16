@@ -10,6 +10,9 @@ public class PoeticsController : MonoBehaviour
     public Button button; // Reference to the button
     public Canvas canvas; // Reference to opening UI canvas
 
+    // Reference to the script controlling panning
+    public MonoBehaviour panningScript;
+
     // Array of texts, each on a new line for better organization
     private string[] texts =
     {
@@ -74,4 +77,33 @@ public class PoeticsController : MonoBehaviour
 
         Debug.Log("Text and button are now hidden.");
     }
+
+    // Method to disable panning
+    void DisablePanning()
+    {
+        if (panningScript != null)
+        {
+            panningScript.enabled = false; // Disable the panning script
+            Debug.Log("Panning has been disabled.");
+        }
+        else
+        {
+            Debug.LogWarning("Panning script reference is missing.");
+        }
+    }
+
+    // Method to enable panning
+    void EnablePanning()
+    {
+        if (panningScript != null)
+        {
+            panningScript.enabled = true; // Enable the panning script
+            Debug.Log("Panning has been enabled.");
+        }
+        else
+        {
+            Debug.LogWarning("Panning script reference is missing.");
+        }
+    }
 }
+
