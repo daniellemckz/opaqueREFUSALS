@@ -16,15 +16,14 @@ public class PoeticsController : MonoBehaviour
     // Array of texts, each on a new line for better organization
     private string[] texts =
     {
-        "drenched in bubble wrap\r\na far cry from a binary arrival\r\nWhat some would call “a place”\r\nFrom here on out please refer to it as “a where?”\r\n",
-        "This is a pressurized space (a where ? )\r\nThis is a pressurized body (aware — ) \r\n",
-        "Welcome to my <s> <space=5em> body</s>\r\nA compressed container\r\nCatalyzing\r\nMy <u><space=5em></u>\r\nWith growing unrest\r\nundisturbed here\r\n",
-        "Please disturb the space\r\nin order to open it up\r\nand allow itself to be perceived\r\nFor what it is\r\n",
-        "Exhaling\r\nAnd perceive its inhabitants\r\n\r\nIt takes time\r\n\r\nWhere-in-here\r\nHolds pieces\r\nFloatation devices\r\nAlready capsize\r\n",
-        "Disintergations",
-        "but a sweeping transition holding zone\r\nBegging for you to sweep\r\n\tWith a mouse\r\n\tWith a hand\r\n\tWith some space to jump\r\n\tWith an instinct to determine direction\r\n\t\tWhat\r\n\t\tAre\r\n\t\tStatic\r\n\t\tDisintegrations",
-        "It exists between a point of departure and arrival\r\nBasking in the suspension of time\r\n",
-        ""
+        "this is a pressurized space (a where ? )\r\nthis is a pressurized body (aware — ) \r\nplease disrupt the space",
+        "What some would call a place\r\nfrom here on out please refer to it as a where",
+        "Welcome to my <s> <space=5em> body</s>\r\na compressed container\r\ncatalyzing into its multiplicities\r\nfrom growing unrest\r\nundisturbed here",
+        "please disrupt the space\r\nin order to open it up\r\nand allow itself to be perceived\r\nwith sincerity gaze",
+        "contending with the\r\nalready",
+        "capsized\r\n\r\n            deflated",
+        "w hat   a re   s tatic   d eflations",
+        "please commit to the disruption\r\nby XXXXhaling your breathe",
     };
 
     // Variable to keep track of the current text index
