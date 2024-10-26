@@ -3,7 +3,12 @@ guid: 633c773a4ec87d64899d2a71b86031e5
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bubble_Wrap_Material
+    second: {fileID: 2100000, guid: 60dd7520018bbb54ea5885d90dfd2be3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
