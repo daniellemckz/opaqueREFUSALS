@@ -16,14 +16,17 @@ public class PoeticsController : MonoBehaviour
     // Array of texts, each on a new line for better organization
     private string[] texts =
     {
-        "this is a pressurized space (a where ? )\r\nthis is a pressurized body (aware — ) \r\nplease disrupt the space",
-        "What some would call a place\r\nfrom here on out please refer to it as a where",
-        "Welcome to my <s> <space=5em> body</s>\r\na compressed container\r\ncatalyzing into its multiplicities\r\nfrom growing unrest\r\nundisturbed here",
-        "please disrupt the space\r\nin order to open it up\r\nand allow itself to be perceived\r\nwith sincerity gaze",
+        "this is a pressurized space (a where?)\r\nthis is a pressurized body (aware) \r\nplease disrupt the space",
+        "What some would call a place\r\nfrom here on out please refer to it as\r\n\r\n\r\n\r\n\r\n\r\n\r\n                   a where we",
+        "Welcome to my <s> <space=5em> body</s>\r\n   a compressed container\r\n   catalyzing into its multiplicities\r\n   from growing unrest\r\n   undisturbed here",
+        "please disrupt the space\r\nin order to open it up\r\nand allow itself to be perceived\r\nwith sincerity",
+        "a gaze",
         "contending with the\r\nalready",
         "capsized\r\n\r\n            deflated",
         "w hat   a re   s tatic   d eflations",
-        "please commit to the disruption\r\nby XXXXhaling your breathe",
+        "please",
+        "commit to the disruption",
+        "by e   haling your breathe\r\n         X",
     };
 
     // Variable to keep track of the current text index

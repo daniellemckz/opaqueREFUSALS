@@ -4,8 +4,21 @@ using TMPro; // For TextMeshPro
 public class TriggerMessage : MonoBehaviour
 {
     public TextMeshProUGUI messageText; // Drag and drop your TextMeshProUGUI here
-    public string messageToShow = "You've collided with the object!";
     public float messageDuration = 2f; // Duration for which the message will be shown
+
+    // Public message fields that can be customized in the Unity Inspector
+    public string firstCollisionMessage = "";
+    public string secondCollisionMessage = "";
+    public string thirdCollisionMessage = "";
+    public string fourthCollisionMessage = "";
+    public string fifthCollisionMessage = "";
+    public string sixthCollisionMessage = "";
+    public string seventhCollisionMessage = "";
+    public string eighthCollisionMessage = "";
+    public string ninthCollisionMessage = "";
+    public string defaultCollisionMessage = "";
+
+    private int collisionCount = 0; // Counter to track number of collisions
 
     private void Start()
     {
@@ -13,31 +26,42 @@ public class TriggerMessage : MonoBehaviour
         messageText.gameObject.SetActive(false);
     }
 
-    // For trigger collisions, use this instead:
     private void OnTriggerEnter(Collider other)
-
     {
-        Debug.Log("Trigger Detected with: " + other.gameObject.name);
+        // Check if we collided with the correct object
         if (other.CompareTag("TargetObject"))
-
         {
-            ShowMessage();
+            collisionCount++; // Increment the collision counter
+            ShowMessage(); // Show the appropriate message
         }
-
     }
 
     void ShowMessage()
     {
-        Debug.Log("Message Triggered");
-        messageText.text = messageToShow; // Set the message text
-        messageText.gameObject.SetActive(true); // Show the message
+        // Determine which message to show based on the collision count
+        switch (collisionCount)
+        {
+            case 1:
+                messageText.text = firstCollisionMessage;
+                break;
+            case 2:
+                messageText.text = secondCollisionMessage;
+                break;
+            case 3:
+                messageText.text = thirdCollisionMessage;
+                break;
+            default:
+                // Use the default message with the number of collisions
+                messageText.text = string.Format(defaultCollisionMessage, collisionCount);
+                break;
+        }
 
-        // Hide the message after the set duration
-        Invoke("HideMessage", messageDuration);
+        messageText.gameObject.SetActive(true); // Show the message
+        Invoke("HideMessage", messageDuration); // Hide the message after a duration
     }
 
     void HideMessage()
     {
-        messageText.gameObject.SetActive(false); // Hide the message after the duration
+        messageText.gameObject.SetActive(false); // Hide the message after duration
     }
 }

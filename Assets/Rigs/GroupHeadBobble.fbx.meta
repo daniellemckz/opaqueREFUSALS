@@ -40,7 +40,7 @@ ModelImporter:
       name: GroupHeadBobble
       takeName: urdf_fbxAction
       internalID: -6917004670058272616
-      firstFrame: -1
+      firstFrame: 194
       lastFrame: 3673
       wrapMode: 0
       orientationOffsetY: 0
@@ -48,8 +48,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
