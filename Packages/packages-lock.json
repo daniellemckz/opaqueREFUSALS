@@ -93,6 +93,7 @@
         "com.unity.modules.imgui": "1.0.0",
         "com.unity.modules.physics": "1.0.0",
         "com.unity.settings-manager": "1.0.3"
+<<<<<<< HEAD
       },
       "url": "https://packages.unity.com"
     },
@@ -102,6 +103,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.timeline": "1.0.0"
+=======
+>>>>>>> 8857c42d5a90090a5d014cc50f0668a4519e8c84
       },
       "url": "https://packages.unity.com"
     },
@@ -172,6 +175,34 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.vrmc.gltf": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.127.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.modules.animation": "1.0.0"
+      },
+      "hash": "0214d88919d0330f46f9dd59f64bff14cfbf3cde"
+    },
+    "com.vrmc.univrm": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM#v0.127.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.vrmc.gltf": "0.127.1",
+        "com.unity.ugui": "1.0.0"
+      },
+      "hash": "0214d88919d0330f46f9dd59f64bff14cfbf3cde"
+    },
+    "com.vrmc.vrm": {
+      "version": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM10#v0.127.1",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.vrmc.gltf": "0.127.1"
+      },
+      "hash": "0214d88919d0330f46f9dd59f64bff14cfbf3cde"
     },
     "com.unity.modules.ai": {
       "version": "1.0.0",
