@@ -317,9 +317,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1075055577058657170, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2850302142403417912, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4334335879253331485, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809043532312537114, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6314475573889015160, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
       propertyPath: m_Name
       value: Human_Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 7075061725651015109, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7670445414644340088, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7721643249143854632, guid: 61e16a69308eef047b80d2ea76a20f7a, type: 3}
       propertyPath: m_LocalPosition.x
