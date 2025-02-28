@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
         skinnedMeshRenderer = GetComponent<SkinnedMeshRenderer>();
         skinnedMesh = GetComponent<SkinnedMeshRenderer>().sharedMesh;
         blendShapeCount = skinnedMesh.blendShapeCount;
-
+       
         //to regulate speed of the object animation
         Application.targetFrameRate = 24;
     }
